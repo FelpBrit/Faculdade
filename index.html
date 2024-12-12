@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico de Função Linear</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <label for="coefA">Coeficiente angular (a):</label>
+            <input type="number" id="coefA" placeholder="Digite o valor de a" />
+            
+            <label for="coefB">Coeficiente linear (b):</label>
+            <input type="number" id="coefB" placeholder="Digite o valor de b" />
+
+            <button onclick="calcularEPlotar()">Calcular e Mostrar Gráfico</button>
+
+            <p id="resultado">Função: y = </p>
+            <p id="tipoFuncao">Tipo da função: </p>
+            <p id="raizFuncao">Raiz da função: </p>
+        </div>
+        <canvas id="grafico"></canvas>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
